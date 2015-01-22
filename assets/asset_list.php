@@ -181,6 +181,9 @@
 			// TODO perform validate
 			// Get an instance of the database
 			$objDatabase = QApplication::$Database[1];
+            
+            // initialize $blnError with false to prevent evaluation issues.
+            $blnError = false;
 
 			foreach ($items as $item) {
 				// First check that the user is authorized to delete this asset
